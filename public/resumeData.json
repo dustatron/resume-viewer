@@ -1,6 +1,6 @@
 {
   "main": {
-    "name":"Brad Traversy",
+    "name":"Dusty McCord",
     "occupation":"Web developer, programmer and designer",
     "description":"I design and program websites and web applications of all types. I also teach web dev courses",
     "image":"profilepic.jpg",
@@ -56,7 +56,7 @@
   "resume":{
     "education":[
       {
-        "school":"University of Life",
+        "school":"State University",
         "degree":"Master in Graphic Design",
         "graduated":"April 2007",
         "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium."
@@ -84,15 +84,15 @@
     ],
     "skills":[
       {
-        "name":"Photoshop",
-        "level":"60%"
+        "name":"Adobe Premiere",
+        "level":"90%"
       },
       {
-        "name":"Illustrator",
-        "level":"55%"
+        "name":"After Effects",
+        "level":"85%"
       },
       {
-        "name":"Wordpress",
+        "name":"Lighting",
         "level":"50%"
       },
       {
