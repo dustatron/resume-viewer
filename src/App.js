@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import $ from 'jquery';
 import './App.css';
 import Header from './Components/Header';
 import About from './Components/About';
@@ -10,7 +10,35 @@ import Resume from './Components/Resume';
 import Testimonials from './Components/Testimonials';
 
 class App extends Component {
-  render() {
+  constructor(props) {
+    super(props);
+    this.state = {
+      foo: 'bar',
+      resumeData:{}
+    }
+  }
+
+  getResumeData() {
+    $.ajax({
+      url:'http://192.168.1.52:3000/resumeData.json',
+      dataType: 'json',
+      cache: false,
+      success: function(data) {
+        this.setState({resumeData: data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.log('ERROR:' + err);
+        alert('ERROR:' + err);
+      }
+    });
+  }
+
+  componentDidMount(){
+    this.getResumeData();
+  }
+
+    render() {
+    console.log(this.state.resumeData);
     return (
       <div className="App">
         <Header />
